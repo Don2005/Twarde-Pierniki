@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.css">
     <title>Twarde Pierniki</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <div class="hero">
@@ -52,15 +56,18 @@
             </div>
           </div>
         <div id="grubas" style="background-image: url(images/body.jpg);height:4096px;">
-          <div id="odliczanie" style="text-align: center;margin-top: 120px;font-weight: 900;font-size: 3vw;font-family: DKDropDeadGorgeousEdit, Roboto, Arial, sans-serif;">
+          <div id="odliczanie" style="text-align: center;font-weight: 900;font-size: 4vw;font-family: 'Permanent Marker', cursive;margin-top: 100px;">
             <p>
                 CZAS DO NASTĘPNEGO MECZU
             </p>
-            <div id="zostalo" style="font-size: 1.5vw;margin-top: 20px;">
-              Div w którym pojawi się odliczany czas
+            <div id="zostalo" style="font-size: 2vw;font-family: Arial, Helvetica, sans-serif;">
             </div>
           </div>
-          <div class="tabela" style="margin-left: 1500px;margin-top: 100px;">
+          <div style="display: flex;align-items: center;">
+            <video id="background" autoplay loop muted onload="Backgroundchange()" style="margin-top: 7vw;margin-left: 10vw;border-radius: 100px;box-shadow: 0px 0px 100px -3px rgba(66, 68, 90, 1);margin-bottom: 100px;width: 50%;">
+              <source src="images/hl.mp4" type="video/mp4">
+            </video>
+            <div class="tabela" style="margin-top: 2vw;margin-left: 15vw;background-color: white;padding:30px;border-radius: 20px;box-shadow: 0px 0px 100px -20px rgba(66, 68, 90, 1);">
               <p style="font-size:1.49vw;font-weight: 900;">Tabela PLK 2021/2022</p>
             <div>
               <table style="margin-left: 8px;">
@@ -178,6 +185,12 @@
                 </tr>
                     </tbody></table>
             </div>
+          </div>
+          </div>
+          <div>
+            <h1 style="overflow: hidden;text-align:center;font-family: 'Permanent Marker', cursive;font-size:6vw;text-shadow: 4px 3px 5px rgba(66, 68, 90, 1);padding-bottom: 100px;" data-aos="fade-up" data-aos-duration="1000">
+              SOCIAL MEDIA
+            </h1>
           </div>
         </div>
         <div id="stopka" style="background-color: rgb(15, 15, 15);height:250px;color: white;overflow: hidden;display: flex;align-items: center;font-weight: 600;">
@@ -304,6 +317,10 @@ function scrollFunction() {
           }
   }
   countdown(2022,09,01)
+</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
 </script>
 </body>
 </html>
