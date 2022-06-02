@@ -6,6 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.css">
     <title>Twarde Pierniki</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="hero">
@@ -31,21 +41,21 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
-          <div id="tytul" class="text-white" style="position:absolute;font-size: 5vw;text-align: center;width: 100%;margin-top: 420px;font-family: Oswald;">
+          <div id="tytul" class="text-white" style="position:absolute;font-size: 5vw;text-align: center;width: 100%;margin-top: 420px;font-family: 'Courgette', cursive;text-shadow: 4px 4px 6px rgba(66, 68, 90, 1);">
             TWARDE PIERNIKI TORUŃ
           </div>
-          <div id="nav" class="navbar text-white w-100" style="position: fixed;overflow: hidden;font-family: DKDropDeadGorgeousEdit, Roboto, Arial, sans-serif;">
+          <div id="nav" class="navbar text-white w-100" style="position: fixed;overflow: hidden;z-index: 4;">
               <img src="images/Polski_Cukier_Toruń_logo.png" id="logo" class="" style="width: 200px; margin-left: 50px; margin-top:54px;filter: drop-shadow(0px 0px 5px #222);">
-              <a id="text" class="" style="position: absolute; margin-left: 300px; font-size: 4vw; margin-top: 50px; opacity: 0%;text-decoration: none;"href="index.html">
+              <a id="text" class="" style="position: absolute; margin-left: 300px; font-size: 4vw; margin-top: 50px; opacity: 0%;text-decoration: none;font-family: 'Bebas Neue', cursive;"href="index.html">
                 HOME
               </a>
-              <a id="text1" class="" style="position: absolute; margin-left: 500px; font-size: 4vw; margin-top: 50px; opacity: 0%;text-decoration: none;" href="druzyna.html">
+              <a id="text1" class="" style="position: absolute; margin-left: 500px; font-size: 4vw; margin-top: 50px; opacity: 0%;text-decoration: none;font-family: 'Bebas Neue', cursive;" href="druzyna.html">
                 DRUŻYNA
               </a>
-              <a id="text2" class="" style="position: absolute; margin-left: 750px; font-size: 4vw; margin-top: 50px; opacity: 0%;text-decoration: none;"href="historia.html">
+              <a id="text2" class="" style="position: absolute; margin-left: 750px; font-size: 4vw; margin-top: 50px; opacity: 0%;text-decoration: none;font-family: 'Bebas Neue', cursive;"href="historia.html">
                 HISTORIA
               </a>
-              <a id="text3" class="" style="position: absolute; margin-left: 1000px; font-size: 4vw; margin-top: 50px; opacity: 0%;text-decoration: none;"href="kontakt.html">
+              <a id="text3" class="" style="position: absolute; margin-left: 1000px; font-size: 4vw; margin-top: 50px; opacity: 0%;text-decoration: none;font-family: 'Bebas Neue', cursive;"href="kontakt.html">
                 KONTAKT
               </a>
               <img src="images/plk_logo.png" id="logo1" class="" style="width: 200px; margin-top: 0px; margin-right: 20px; filter: drop-shadow(0px 0px 5px #222);">
@@ -93,9 +103,10 @@ Projekt i wdrożenie: Don
 
 function scrollFunction() {
   if (document.body.scrollTop > 1 || document.documentElement.scrollTop > 1) {
-    document.getElementById("nav").style.boxShadow="0px 0px 100px black";
+    document.getElementById("nav").style.boxShadow="0px -36px 100px 70px rgba(0, 0, 0, 1)";
     document.getElementById("nav").style.backgroundColor= "white";
-    document.getElementById("nav").style.height="150px";
+    document.getElementById("nav").style.height="110px";
+    document.getElementById("nav").style.borderBottom="2px solid black";
     document.getElementById("text").style.color= "black";
     document.getElementById("text").style.opacity="100%";
     document.getElementById("text").style.fontSize="2vw";
@@ -112,7 +123,7 @@ function scrollFunction() {
     document.getElementById("text3").style.opacity="100%";
     document.getElementById("text3").style.fontSize="2vw";
     document.getElementById("text3").style.marginTop="10px";
-    document.getElementById("logo").style.width="100px";
+    document.getElementById("logo").style.width="80px";
     document.getElementById("logo").style.marginTop="0px";
     document.getElementById("logo").style.filter="drop-shadow(5px 5px 5px #222)";
     document.getElementById("logo1").style.width="150px";
@@ -122,6 +133,7 @@ function scrollFunction() {
     document.getElementById("nav").style.boxShadow="";
     document.getElementById("nav").style.backgroundColor="";
     document.getElementById("nav").style.height="300px";
+    document.getElementById("nav").style.borderBottom="0px black";
     document.getElementById("text").style.opacity="0%";
     document.getElementById("text").style.fontSize="4vw";
     document.getElementById("text").style.marginTop="54px";

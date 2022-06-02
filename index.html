@@ -10,6 +10,12 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="hero">
@@ -35,39 +41,44 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
-          <div id="tytul" class="text-white" style="position:absolute;font-size: 5vw;text-align: center;width: 100%;margin-top: 420px;font-family: Oswald;">
+          <div id="tytul" class="text-white" style="position:absolute;font-size: 5vw;text-align: center;width: 100%;margin-top: 420px;font-family: 'Courgette', cursive;text-shadow: 4px 4px 6px rgba(66, 68, 90, 1);">
             TWARDE PIERNIKI TORUŃ
           </div>
-          <div id="nav" class="navbar text-white w-100" style="position: fixed;overflow: hidden;font-family: DKDropDeadGorgeousEdit, Roboto, Arial, sans-serif;">
+          <div id="nav" class="navbar text-white w-100" style="position: fixed;overflow: hidden;z-index: 4;">
               <img src="images/Polski_Cukier_Toruń_logo.png" id="logo" class="" style="width: 200px; margin-left: 50px; margin-top:54px;filter: drop-shadow(0px 0px 5px #222);">
-              <a id="text" class="" style="position: absolute; margin-left: 300px; font-size: 4vw; margin-top: 50px; opacity: 0%;text-decoration: none;"href="index.html">
+              <a id="text" class="" style="position: absolute; margin-left: 300px; font-size: 4vw; margin-top: 50px; opacity: 0%;text-decoration: none;font-family: 'Bebas Neue', cursive;"href="index.html">
                 HOME
               </a>
-              <a id="text1" class="" style="position: absolute; margin-left: 500px; font-size: 4vw; margin-top: 50px; opacity: 0%;text-decoration: none;" href="druzyna.html">
+              <a id="text1" class="" style="position: absolute; margin-left: 500px; font-size: 4vw; margin-top: 50px; opacity: 0%;text-decoration: none;font-family: 'Bebas Neue', cursive;" href="druzyna.html">
                 DRUŻYNA
               </a>
-              <a id="text2" class="" style="position: absolute; margin-left: 750px; font-size: 4vw; margin-top: 50px; opacity: 0%;text-decoration: none;"href="historia.html">
+              <a id="text2" class="" style="position: absolute; margin-left: 750px; font-size: 4vw; margin-top: 50px; opacity: 0%;text-decoration: none;font-family: 'Bebas Neue', cursive;"href="historia.html">
                 HISTORIA
               </a>
-              <a id="text3" class="" style="position: absolute; margin-left: 1000px; font-size: 4vw; margin-top: 50px; opacity: 0%;text-decoration: none;"href="kontakt.html">
+              <a id="text3" class="" style="position: absolute; margin-left: 1000px; font-size: 4vw; margin-top: 50px; opacity: 0%;text-decoration: none;font-family: 'Bebas Neue', cursive;"href="kontakt.html">
                 KONTAKT
               </a>
               <img src="images/plk_logo.png" id="logo1" class="" style="width: 200px; margin-top: 0px; margin-right: 20px; filter: drop-shadow(0px 0px 5px #222);">
             </div>
           </div>
-        <div id="grubas" style="background-image: url(images/body.jpg);height:4096px;">
-          <div id="odliczanie" style="text-align: center;font-weight: 900;font-size: 4vw;font-family: 'Permanent Marker', cursive;margin-top: 100px;">
+        <div id="grubas" style="background-image: url(images/body.jpg);height:1700px;">
+          <div id="odliczanie" style="text-align: center;font-weight: 900;font-size: 4vw;font-family: 'Courgette', cursive;margin-top: 100px;text-shadow: 4px 4px 6px rgba(66, 68, 90, 1);">
             <p>
                 CZAS DO NASTĘPNEGO MECZU
             </p>
-            <div id="zostalo" style="font-size: 2vw;font-family: Arial, Helvetica, sans-serif;">
+            <div id="zostalo" style="font-size: 2vw;font-family: 'Courgette', cursive;text-shadow: 4px 4px 6px rgba(66, 68, 90, 1);">
             </div>
           </div>
+          <a id="ostatni" href="https://youtu.be/5Ex6BzzlISY" style="color: black;">
+            <p style="font-size: 2vw;font-family: 'Courgette', cursive;font-weight: 900;text-shadow: 4px 4px 6px rgba(66, 68, 90, 1);margin-left: 550px;margin-bottom: -7vw;margin-top: 10vw;">
+              OSTATNI MECZ
+            </p>
+          </a>
           <div style="display: flex;align-items: center;">
-            <video id="background" autoplay loop muted onload="Backgroundchange()" style="margin-top: 7vw;margin-left: 10vw;border-radius: 100px;box-shadow: 0px 0px 100px -3px rgba(66, 68, 90, 1);margin-bottom: 100px;width: 50%;">
+            <video id="ostatnifilm" autoplay loop controls muted style="margin-top: 7vw;margin-left: 10vw;border-radius: 70px;box-shadow: 0px 0px 100px -3px rgba(66, 68, 90, 1);margin-bottom: 100px;width: 50%;"> 
               <source src="images/hl.mp4" type="video/mp4">
             </video>
-            <div class="tabela" style="margin-top: 2vw;margin-left: 15vw;background-color: white;padding:30px;border-radius: 20px;box-shadow: 0px 0px 100px -20px rgba(66, 68, 90, 1);">
+            <div class="tabela" style="margin-top: 7vw;margin-left: 15vw;background-color: white;padding:30px;border-radius: 20px;box-shadow: 0px 0px 100px -20px rgba(66, 68, 90, 1);margin-bottom: 100px;">
               <p style="font-size:1.49vw;font-weight: 900;">Tabela PLK 2021/2022</p>
             <div>
               <table style="margin-left: 8px;">
@@ -187,10 +198,28 @@
             </div>
           </div>
           </div>
-          <div>
-            <h1 style="overflow: hidden;text-align:center;font-family: 'Permanent Marker', cursive;font-size:6vw;text-shadow: 4px 3px 5px rgba(66, 68, 90, 1);padding-bottom: 100px;" data-aos="fade-up" data-aos-duration="1000">
+          <div style="overflow: hidden;text-decoration: none;">
+            <h1 style="text-align:center;font-family: 'Courgette', cursive;font-size:6vw;text-shadow: 4px 4px 6px rgba(66, 68, 90, 1);padding-bottom: 100px;" data-aos="fade-up" data-aos-duration="1000">
               SOCIAL MEDIA
             </h1>
+            <a href="https://www.instagram.com/twardepierniki/?hl=pl" style="padding: 20px;"data-aos="fade-up" data-aos-duration="1000">
+              <img src="images/instagram.png" style="width:5%;margin-left:5vw;">
+              <p style="position: absolute;font-family: 'Courgette', cursive;font-size:3vw;text-shadow: 4px 4px 6px rgba(66, 68, 90, 1);color: black;margin-top: -5.5vw;margin-left: 11vw;padding: 20px;text-decoration: none;">
+                INSTAGRAM
+              </p>
+            </a>
+            <a href="https://www.instagram.com/twardepierniki/?hl=pl" style="padding: 20px;"data-aos="fade-up" data-aos-duration="1000">
+              <img src="images/facebook.png" style="width:5%;margin-left: 29vw;">
+              <p style="position: absolute;font-family: 'Courgette', cursive;font-size:3vw;text-shadow: 4px 4px 6px rgba(66, 68, 90, 1);color: black;margin-top: -5.5vw;margin-left: 47vw;padding: 20px;text-decoration: none;">
+                FACEBOOK
+              </p>
+            </a>
+            <a href="https://www.instagram.com/twardepierniki/?hl=pl" style="padding: 20px;"data-aos="fade-up" data-aos-duration="1000">
+              <img src="images/youtube.png" style="width:5%;margin-left: 26vw;">
+              <p style="position: absolute;font-family: 'Courgette', cursive;font-size:3vw;text-shadow: 4px 4px 6px rgba(66, 68, 90, 1);color: black;margin-top: -5.5vw;margin-left: 80vw;padding: 20px;text-decoration: none;">
+                YOUTUBE
+              </p>
+            </a>
           </div>
         </div>
         <div id="stopka" style="background-color: rgb(15, 15, 15);height:250px;color: white;overflow: hidden;display: flex;align-items: center;font-weight: 600;">
@@ -231,9 +260,10 @@ Projekt i wdrożenie: Don
       window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if (document.body.scrollTop > 1 || document.documentElement.scrollTop > 1) {
-    document.getElementById("nav").style.boxShadow="0px 0px 100px black";
+    document.getElementById("nav").style.boxShadow="0px -36px 100px 70px rgba(0, 0, 0, 1)";
     document.getElementById("nav").style.backgroundColor= "white";
-    document.getElementById("nav").style.height="150px";
+    document.getElementById("nav").style.height="110px";
+    document.getElementById("nav").style.borderBottom="2px solid black";
     document.getElementById("text").style.color= "black";
     document.getElementById("text").style.opacity="100%";
     document.getElementById("text").style.fontSize="2vw";
@@ -250,7 +280,7 @@ function scrollFunction() {
     document.getElementById("text3").style.opacity="100%";
     document.getElementById("text3").style.fontSize="2vw";
     document.getElementById("text3").style.marginTop="10px";
-    document.getElementById("logo").style.width="100px";
+    document.getElementById("logo").style.width="80px";
     document.getElementById("logo").style.marginTop="0px";
     document.getElementById("logo").style.filter="drop-shadow(5px 5px 5px #222)";
     document.getElementById("logo1").style.width="150px";
@@ -260,6 +290,7 @@ function scrollFunction() {
     document.getElementById("nav").style.boxShadow="";
     document.getElementById("nav").style.backgroundColor="";
     document.getElementById("nav").style.height="300px";
+    document.getElementById("nav").style.borderBottom="0px black";
     document.getElementById("text").style.opacity="0%";
     document.getElementById("text").style.fontSize="4vw";
     document.getElementById("text").style.marginTop="54px";
